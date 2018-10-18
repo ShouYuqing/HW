@@ -193,7 +193,7 @@ for k in file4.readlines():
             cnt_sv =cnt_sv + 1
             cnt = cnt + 1
 
-sv_rate = cnt_sv/(cnt_dd + cnt_sv)
+sv_rate = cnt_sv/ float(cnt_dd + cnt_sv)
 print('overall survival rate: '+str(sv_rate))
 
 # 1
