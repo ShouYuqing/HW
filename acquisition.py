@@ -152,7 +152,7 @@ plt.savefig('figure4.pdf')
 
 # count the number of passengers
 # mean of fare
-f_sum = 0
+m_sum = 0
 for f_i in real_fare:
     m_sum = m_sum + f_i
 meann = m_sum/(real_fare.size)
