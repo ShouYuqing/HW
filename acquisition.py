@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-
+'''
+For Python 2.7
+'''
 import scipy.stats as ss
 import numpy as np
 import csv
@@ -212,7 +214,7 @@ for k in file5.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('female survival rate: '+str(sv_rate))
 
 # 2
@@ -233,7 +235,7 @@ for k in file6.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('male survival rate: '+str(sv_rate))
 
 
@@ -255,7 +257,7 @@ for k in file7.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('first class survival rate: '+str(sv_rate))
 
 # 4
@@ -276,7 +278,7 @@ for k in file8.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('third class survival rate: '+str(sv_rate))
 
 # 5
@@ -297,7 +299,7 @@ for k in file9.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('men in first class survival rate: '+str(sv_rate))
 
 
@@ -319,7 +321,7 @@ for k in file10.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('weman in third class survival rate: '+str(sv_rate))
 
 
@@ -341,7 +343,7 @@ for k in file11.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('Those whose fare exceeded 100 survival rate: '+str(sv_rate))
 
 # 8
@@ -362,7 +364,7 @@ for k in file12.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('Those whose fare was less than 50 survival rate: '+str(sv_rate))
 
 # 9
@@ -383,6 +385,6 @@ for k in file13.readlines():
                 cnt = cnt + 1
         else:
             continue
-sv_rate = cnt_sv / (cnt_dd + cnt_sv)
+sv_rate = cnt_sv / float(cnt_dd + cnt_sv)
 print('People traveling as part of a family survival rate: ' + str(sv_rate))
 
